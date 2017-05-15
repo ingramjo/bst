@@ -31,7 +31,7 @@ int compare(TYPE left, TYPE right)
     data1 = (struct data*)left;
     data2 = (struct data*)right;
 
-    if(data1->number < data2->number)
+    if(data2->number > data1->number)
         return -1;
     else if(data1->number > data2->number)
         return 1;
